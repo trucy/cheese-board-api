@@ -1,0 +1,48 @@
+info it worked if it ends with ok
+verbose cli [ 'node',
+verbose cli   '/usr/local/bin/npm',
+verbose cli   'install',
+verbose cli   'async',
+verbose cli   '/node_modules' ]
+info using npm@1.1.24
+info using node@v0.6.19
+verbose config file /Users/tmphan/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose caching /Users/tmphan/Desktop/Hacker School 2012/09 - Cheese Board/cb/package.json
+verbose loadDefaults application-name@0.0.1
+verbose caching /Users/tmphan/Desktop/Hacker School 2012/09 - Cheese Board/cb/node_modules/express/package.json
+verbose caching /Users/tmphan/Desktop/Hacker School 2012/09 - Cheese Board/cb/node_modules/stylus/package.json
+verbose caching /Users/tmphan/Desktop/Hacker School 2012/09 - Cheese Board/cb/node_modules/jade/package.json
+verbose caching /Users/tmphan/Desktop/Hacker School 2012/09 - Cheese Board/cb/node_modules/node.io/package.json
+verbose caching /Users/tmphan/Desktop/Hacker School 2012/09 - Cheese Board/cb/node_modules/async/package.json
+verbose from cache /Users/tmphan/Desktop/Hacker School 2012/09 - Cheese Board/cb/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'async', null ]
+silly cache add: name, spec, args [ undefined, 'async', [ 'async', null ] ]
+verbose parsed url { pathname: 'async', path: 'async', href: 'async' }
+verbose cache add [ '/node_modules', null ]
+silly cache add: name, spec, args [ undefined, '/node_modules', [ '/node_modules', null ] ]
+verbose parsed url { pathname: '/node_modules',
+verbose parsed url   path: '/node_modules',
+verbose parsed url   href: '/node_modules' }
+verbose addNamed [ 'async', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'async', '', false ]
+ERR! Could not install: /node_modules
+ERR! Error: ENOENT, stat '/node_modules'
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 11.4.0
+ERR! command "node" "/usr/local/bin/npm" "install" "async" "/node_modules"
+ERR! cwd /Users/tmphan/Desktop/Hacker School 2012/09 - Cheese Board/cb
+ERR! node -v v0.6.19
+ERR! npm -v 1.1.24
+ERR! path /node_modules
+ERR! code ENOENT
+ERR! message ENOENT, stat '/node_modules'
+ERR! errno {}
+verbose exit [ 1, true ]
