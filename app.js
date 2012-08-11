@@ -28,6 +28,46 @@ app.get('/', function(req, res){
   articleProvider.display(function(error, docs){
       res.send(docs);
   });
-})
+});
+
+//////////////////////////////////////////////////////////////
+
+app.get('/pizza/:date', function(req, res) {
+	var date = req.params.date.toString();
+	articleProvider.displayPizza(date, function(error, docs){
+      res.send(docs);
+  });
+});
+
+app.get('/bakery/:date', function(req, res) {
+	var date = req.params.date.toString();
+	articleProvider.displayBakery(date, function(error, docs){
+		res.send(docs);
+	});
+});
+
+app.get('/music/:date', function(req, res) {
+	var date = req.params.date.toString();
+	articleProvider.displayMusic(date, function(error, docs){
+		res.send(docs);
+	});
+});
+
+
+/*
+
+app.get('/bread')
+
+app.get('/bread/today')
+
+app.get('/bread/tomorrow')
+
+app.get('/music')
+
+app.get('/music/today')
+
+app.get('/music/tomorrow') */
+
+//////////////////////////////////////////////////////////////
 
 app.listen(3000);
